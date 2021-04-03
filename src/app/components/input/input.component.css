@@ -1,0 +1,11 @@
+.input-container {
+    width : auto;
+    height : 250px;
+    background : blue
+}
+
+button {
+    padding : 5px 50px;
+    margin : 10px;
+}
+

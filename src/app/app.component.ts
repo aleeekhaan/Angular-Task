@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InputService } from './services/input.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-task';
+  data : number[] = []
+
+  constructor(private inputService : InputService) {}
+  
+  ngOnInit(): void {
+    this.inputService.getData()
+      .subscribe(data => this.data = data)
+  }
 }

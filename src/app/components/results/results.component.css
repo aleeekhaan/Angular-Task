@@ -1,0 +1,18 @@
+
+.tab-content {
+    background-color: rgb(70, 114, 197);
+    text-align: center;
+    padding: 100px;
+}
+
+.result-display {
+    margin : 40px;
+    margin-left: 400px;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: rgb(7, 7, 7);
+    background : white;
+}

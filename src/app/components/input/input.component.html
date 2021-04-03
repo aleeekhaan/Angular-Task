@@ -1,0 +1,23 @@
+
+<mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <input style="display: none" type="file" (change)="onUpload($event)" #fileInput>
+        <button mat-button (click)="fileInput.click()">
+            <mat-icon>upload</mat-icon>
+            Upload
+        </button>
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+            <div>
+                <mat-form-field appearance="legacy">
+                    <mat-label>URL</mat-label>
+                    <input matInput placeholder="Enter URL to fetch dataset">
+                </mat-form-field>
+                <button mat-button (click)="fetch()">
+                    <mat-icon>get_app</mat-icon>
+                    Fetch
+                </button>
+            </div>
+    </mat-grid-tile>
+  </mat-grid-list>
