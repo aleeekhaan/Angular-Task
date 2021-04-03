@@ -1,25 +1,5 @@
 <div >
     <mat-tab-group  mat-align-tabs="center">
-        <!-- <mat-tab label="Mean">
-            <mat-card>
-                <h3>Sum of data : 10</h3>
-            </mat-card>
-        </mat-tab>
-        <mat-tab label="Median">
-            <mat-card>
-                <h3>Sum of data : 10</h3>
-            </mat-card>
-        </mat-tab>
-        <mat-tab label="Mode">
-            <mat-card>
-                <h3>Sum of data : 10</h3>
-            </mat-card>
-        </mat-tab>
-        <mat-tab label="Standard Deviation">
-            <mat-card>
-                <h3>Sum of data : 10</h3>
-            </mat-card>
-        </mat-tab> -->
 
         <div *ngFor="let item of (results | keyvalue)">
             <mat-tab  class="tab-content" label="{{item.value.text}}">
